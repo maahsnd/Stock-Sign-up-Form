@@ -1,4 +1,5 @@
 body {
+
     background-image: url("background.jpg");
     background-color: forestgreen;
     background-repeat: no-repeat;
@@ -9,6 +10,7 @@ body {
 }
 
 .right-side-div {
+
     height: 100vh;
     width: 65vw;
     position: absolute;
@@ -16,10 +18,24 @@ body {
     background-color: azure;
 }
 
+.left-side-div {
+    height: 100vh;
+    width: 35vw;
+    position: absolute; 
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
 .background-image-credit-div {
     height: 5vh; 
     width: 35vw;
     justify-content: center;
-    border: 1px solid red;
     display: flex;
+    font-size: 4rem;
+    color: azure;
+}
+
+.background-image-credit-div > p >a{
+    color: azure;
 }
