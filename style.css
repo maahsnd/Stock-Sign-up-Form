@@ -8,15 +8,7 @@ body {
     margin: 0;
 }
 
-.right-side-div {
-    height: 100vh;
-    width: 65vw;
-    position: absolute;
-    right: 0;
-    background-color: azure;
-}
-
-.left-side-div {
+.left-side {
     height: 100vh;
     width: 35vw;
     position: absolute; 
@@ -32,12 +24,12 @@ body {
 }
 
 .logo-banner {
-    height: 15vh;
+    height: 25vh;
     width: 35vw;
     background-color: rgba(90, 86, 86, 0.5);
     justify-self: center;
     position: relative;
-    bottom: 50vh;
+    bottom: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +42,7 @@ body {
     color: white;
 }
 
-.background-image-credit-div {
+.background-image-credit-container {
     height: 5vh; 
     width: 35vw;
     display: flex;
@@ -59,11 +51,120 @@ body {
     text-align: center;
 }
 
-.background-image-credit-div > p >a{
+.background-image-credit-container > p >a{
     color: azure;
 }
 
-.background-image-credit-div > p {
+.background-image-credit-container > p {
     margin: 0;
     flex: 1;
+}
+
+.right-side {
+    height: 100vh;
+    width: 65vw;
+    position: absolute;
+    right: 0;
+    background-color: azure;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 0 10px 18px grey;
+    font-size: 4rem;
+    font-family: inherit;
+}
+
+form, .form-container {
+    height: 32vh;   
+    width: 65vw;
+}
+
+form {
+    font-family: inherit;
+    margin-left: 8rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+input {
+    width: 20vw;
+    height: 3vh;
+    font-size: 100%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+.left-input, .right-input {
+    display: flex;      
+    flex-direction: column;
+}
+
+.input-dad {
+    display: flex;
+    margin-left: 1rem;
+    margin: 4rem 0rem 4rem 0rem;
+}
+
+.right-input {
+    margin-left: 8rem;
+}
+
+label {
+    font-size: 90%;
+}
+
+.right-side p {
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+
+.form-pitch {
+    margin: 0 0 8rem 8rem;
+    width: 45vw;   
+}
+
+.btn-container {
+    width: 16vw;
+    height: 5vh;
+    display: flex;
+    margin: 8rem 0 6rem 8rem;
+}
+
+button {
+    background-color: lightblue;
+    border-radius: 1.5rem;
+    border: none;
+    flex: 1;
+    font-family: Norse;
+}
+
+.login-prompt {
+    margin: 0 0 0 8rem;
+}
+
+button {
+    font-size: 6rem;
+    font-weight: bold;
+    color: darkslategrey;
+    box-shadow: 0 10px 18px grey;
+}
+
+.login-prompt > p > button {
+    background-color: rgba(0,0,0,0);
+}
+
+.login-prompt > p {
+    font-weight: 500;
+    font-size: 4.5rem;
+}
+
+button:hover {
+    cursor: pointer;
 }

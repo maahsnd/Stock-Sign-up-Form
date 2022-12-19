@@ -8,13 +8,12 @@
   <title>Sign-up Form</title>
 </head>
 <body>
-    <div class="right-side-div"></div>
-    <div class="left-side-div">
+    <div class="left-side">
         <div class="logo-banner">
             <img src="odin-logo.png" alt="The Odin Project logo">
             <p>Odin</p>
         </div>
-        <div class="background-image-credit-div">
+        <div class="background-image-credit-container">
             <p>
                 Background photo by <a href=
                 "https://unsplash.com/@sortino?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
@@ -22,6 +21,73 @@
                 "https://unsplash.com/backgrounds?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                 Unsplash</a>
             </p>
+        </div>
+    </div>
+    <div class="right-side">
+
+        <div class="form-pitch">
+            <p>Five times I have told you thusly, frankly that it--
+                it--it----it! Yes I have told you it time and again--
+                That it!
+            </p>
+            <p>
+                Do you have <em>it</em> now? What about <em>that?</em>
+            </p>
+        </div>
+
+        <div class="form-container">
+            <form action="none">
+                <ul>
+                    <li><p>Let's do this!</p></li>
+                    <li>
+                        <div class="input-dad">
+                        <div class="left-input">
+                        <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name"></input>
+                        </div>
+                        <div class="right-input">
+                        <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name"></input>
+                        </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="input-dad">
+                            <div class="left-input">
+                                <label for="email">Email </label>
+                                <input type="email" name="email" id="email"></input>
+                            </div>
+                            <div class="right-input">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="tel" name="phone-number" id="phone-number"></input>
+                            </div>
+                        </div>   
+                    </li>
+
+                    <li>
+                        <div class="input-dad">
+                            <div class="left-input">
+                                <label for="password">Password</label>
+                                <input type="text" name="password" id="password"></input>
+                            </div>
+                            <div class="right-input">
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="text" name="confirm-password" id="confirm-password"></input>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="btn-container">
+            <button type="button">
+                Create Account
+            </button>
+        </div>
+
+        <div class="login-prompt">
+            <p>Already have an account? <button>Log in</button></p>
         </div>
     </div>
 </body>
