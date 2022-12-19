@@ -24,18 +24,89 @@ body {
     position: absolute; 
     left: 0;
     display: flex;
-    align-items: flex-end;
+    flex-flow: column nowrap;
+    justify-content: flex-end
+}
+
+.logo-banner {
+    height: 15vh;
+    width: 35vw;
+    background-color: rgba(176, 167, 167, 0.5);
+    justify-self: center;
+    position: relative;
+    bottom: 50vh;
 }
 
 .background-image-credit-div {
     height: 5vh; 
     width: 35vw;
-    justify-content: center;
     display: flex;
     font-size: 4rem;
     color: azure;
+    text-align: center;
 }
 
 .background-image-credit-div > p >a{
     color: azure;
+}
+
+.background-image-credit-div > p {
+    margin: 0;
+    flex: 1;
+}
+body {
+
+    background-image: url("background.jpg");
+    background-color: forestgreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.right-side-div {
+
+    height: 100vh;
+    width: 65vw;
+    position: absolute;
+    right: 0;
+    background-color: azure;
+}
+
+.left-side-div {
+    height: 100vh;
+    width: 35vw;
+    position: absolute; 
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end
+}
+
+.logo-banner {
+    height: 15vh;
+    width: 35vw;
+    background-color: rgba(176, 167, 167, 0.5);
+    justify-self: center;
+    position: relative;
+    bottom: 50vh;
+}
+
+.background-image-credit-div {
+    height: 5vh; 
+    width: 35vw;
+    display: flex;
+    font-size: 4rem;
+    color: azure;
+    text-align: center;
+}
+
+.background-image-credit-div > p >a{
+    color: azure;
+}
+
+.background-image-credit-div > p {
+    margin: 0;
+    flex: 1;
 }
