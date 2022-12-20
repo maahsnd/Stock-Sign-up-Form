@@ -24,7 +24,6 @@
         </div>
     </div>
     <div class="right-side-container">
-
         <div class="form-pitch">
             <p>Five times I have told you thusly, frankly that it--
                 it--it----it! Yes I have told you it time and again--
@@ -68,14 +67,22 @@
                         <div class="input-dad">
                             <div class="left-input">
                                 <label for="password">Password</label>
-                                <input type="text" name="password" id="password"></input>
+                                <input minlength="8" class="password" type="text" 
+                                name="password" id="password"
+                                required
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"></input>
+                            
                             </div>
                             <div class="right-input">
                                 <label for="confirm-password">Confirm Password</label>
-                                <input type="text" name="confirm-password" id="confirm-password"></input>
+                                <input minlength="8" class="password" type="text" 
+                                required
+                                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                                name="confirm-password" id="confirm-password"></input>
                             </div>
                         </div>
                     </li>
+                    <li><span>*Password must contain: uppercase, lowercase, number/special character and minimum 8 characters</span></li>
                 </ul>
             </form>
         </div>
